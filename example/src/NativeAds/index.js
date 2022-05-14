@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import {NativeAdsManager, AdSettings} from 'react-native-fbads';
-import {Container} from 'native-base';
-import {nativeAdPlacementId} from '../Variables';
+import React, { Component } from 'react';
+import { NativeAdsManager, AdSettings } from '@potomac-technologies/react-native-fbads';
+import { Container } from 'native-base';
+import { nativeAdPlacementId } from '../Variables';
 
 import NativeAdView from './NativeAdView';
 

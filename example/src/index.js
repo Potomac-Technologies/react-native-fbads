@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import {StyleSheet, Dimensions, TouchableHighlight} from 'react-native';
-import {Container, Text} from 'native-base';
-import {Actions} from 'react-native-router-flux';
-import {AdSettings} from 'react-native-fbads';
+import React, { Component } from 'react';
+import { StyleSheet, Dimensions, TouchableHighlight } from 'react-native';
+import { Container, Text } from 'native-base';
+import { Actions } from 'react-native-router-flux';
+import { AdSettings } from '@potomac-technologies/react-native-fbads';
 
-const {width} = Dimensions.get('window');
+const { width } = Dimensions.get('window');
 
 export default class Main extends Component {
   async componentDidMount() {

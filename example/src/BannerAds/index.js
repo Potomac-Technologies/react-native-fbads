@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import {StyleSheet, View} from 'react-native';
-import {Container} from 'native-base';
-import {BannerView} from 'react-native-fbads';
-import {bannerAdPlacementId} from '../Variables';
+import React, { Component } from 'react';
+import { StyleSheet, View } from 'react-native';
+import { Container } from 'native-base';
+import { BannerView } from '@potomac-technologies/react-native-fbads';
+import { bannerAdPlacementId } from '../Variables';
 
 export default class BannerAd extends Component {
   render() {

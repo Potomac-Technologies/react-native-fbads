@@ -75,6 +75,6 @@ const withReactNativeFbads: ConfigPlugin = (config) => {
   return withFacebookManifest(config);
 };
 
-const pkg = require('react-native-fbads/package.json');
+const pkg = require('@potomac-technologies/react-native-fbads/package.json');
 
 export default createRunOncePlugin(withReactNativeFbads, pkg.name, pkg.version);

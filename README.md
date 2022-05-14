@@ -139,7 +139,7 @@ On android, you'll need to add the following to your `AndroidManifest.xml`:
 Usage:
 
 ```js
-import { InterstitialAdManager } from 'react-native-fbads';
+import { InterstitialAdManager } from '@potomac-technologies/react-native-fbads';
 
 InterstitialAdManager.showAd(placementId)
   .then((didClick) => {})
@@ -151,7 +151,7 @@ The `showAd` method returns a promise that will be resolves once the ad has been
 If you want to preload the ad and show it later you can use this instead:
 
 ```js
-import { InterstitialAdManager } from 'react-native-fbads';
+import { InterstitialAdManager } from '@potomac-technologies/react-native-fbads';
 
 InterstitialAdManager.preloadAd(placementId)
   .then((didClick) => {})
@@ -170,7 +170,7 @@ Native Ads allow you to create custom ad layouts that match your app. Before pro
 #### 1. Create the ads manager
 
 ```js
-import { NativeAdsManager } from 'react-native-fbads';
+import { NativeAdsManager } from '@potomac-technologies/react-native-fbads';
 
 const adsManager = new NativeAdsManager(placementId, numberOfAdsToRequest);
 ```
@@ -209,7 +209,7 @@ import {
   MediaView,
   AdChoicesView,
   TriggerableView,
-} from 'react-native-fbads';
+} from '@potomac-technologies/react-native-fbads';
 class AdComponent extends React.Component {
   render() {
     return (
@@ -236,7 +236,7 @@ You can use the included `AdChoicesView` component and style it to your liking.
 #### Example usage
 
 ```js
-import { AdChoicesView } from 'react-native-fbads';
+import { AdChoicesView } from '@potomac-technologies/react-native-fbads';
 
 <AdChoicesView style={{ position: 'absolute', left: 0, top: 0 }} />;
 ```
@@ -280,7 +280,7 @@ Banners are available in 2 sizes:
 - `large` (BANNER_HEIGHT_90)
 
 ```js
-import { BannerView } from 'react-native-fbads';
+import { BannerView } from '@potomac-technologies/react-native-fbads';
 
 function ViewWithBanner(props) {
   return (
@@ -324,7 +324,7 @@ adsManager.setMediaCachePolicy('none' | 'icon' | 'image' | 'all');
 ### AdSettings
 
 ```js
-import { AdSettings } from 'react-native-fbads';
+import { AdSettings } from '@potomac-technologies/react-native-fbads';
 ```
 
 AdSettings contains global settings for all ad controls.

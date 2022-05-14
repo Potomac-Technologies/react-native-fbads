@@ -1,6 +1,6 @@
 {
   "name": "@potomac-technologies/react-native-fbads",
-  "version": "7.0.7",
+  "version": "7.0.10",
   "description": "[Forked from Callstack] Native Facebook Ads for React Native",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "build:plugin": "tsc --build plugin",
     "clean:plugin": "expo-module clean plugin",
     "lint:plugin": "eslint plugin/src/*",
-    "prepare": "npm run build:plugin",
+    "prepare": "npm run build:plugin && npm run tsc || true",
     "tsc": "tsc --project .",
     "lint": "tslint --project .",
     "ci-publish": "npm i && npm-cli-login && npm publish && rm -rf node_modules && rm package-lock.json"
