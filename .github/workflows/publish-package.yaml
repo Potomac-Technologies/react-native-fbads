@@ -1,0 +1,20 @@
+name: Publish package
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    name: Build and publish package
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create local changes
+        run: npm run ci-publish
+        env:
+          NPM_USER: 'morganv'
+          NPM_EMAIL: 'morgan@tuvu.com'
+          NPM_REGISTRY: 'https://npm.pkg.github.com'
+          NPM_SCOPE: '@potomac-technologies'
+          NPM_PASS: ${{ secrets.GH_PACKAGES_AUTOMATION_TOKEN }}
